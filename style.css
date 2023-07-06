@@ -92,7 +92,7 @@
 .container {
     height: 120vh;
     width: 100%;
-    background-image: url(../images/home.jpg);
+    background-image: url(images/home.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
@@ -195,7 +195,7 @@ h4 {
 }
 
 .SiCard {
-    background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.67)), url(../images/ccard2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.67)), url(images/ccard2.jpg);
     height: 55vh;
     background-size: cover;
     width: 70%;
@@ -264,7 +264,7 @@ span {
 }
 
 .full {
-    background-image: url(../images/newsletter-img.jpg);
+    background-image: url(images/newsletter-img.jpg);
     height: 40vh;
     background-attachment: fixed;
     width: 100%;
