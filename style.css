@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background: transparent;
+    z-index: 999;
+    transition: all 0.9s;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header h2 {
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    list-style: none;
+    color: #fff;
+}
+
+.header li:hover {
+    color: darkgreen;
+    transition: 0.5s;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nav ul li a {
+    padding: 15px 20px;
+    font-size: 1.4rem;
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+
+.bar {
+    display: none;
+}
+
+.header .nav .menu .cross{
+    display: none;
+}
+
+.scrolled .hlogo h2 {
+    color: #000;
+}
+
+.scrolled .nav li a {
+    color: #000;
+}
+
+.hero-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* width: 100%; */
+}
+
+.hero-shape img {
+    /* width: 100%; */
+    display: block;
+}
+
+.container {
+    height: 120vh;
+    width: 100%;
+    background-image: url(../images/home.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.centeritn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fa-circle-play {
+    font-size: 1.7rem;
+    margin: 10px;
+}
+
+.fa-circle-pause {
+    font-size: 1.7rem;
+    margin: 10px;
+}
+
+.playIcon{
+    position: absolute;
+    color: #8ceb34;
+    font-size: 3rem;
+    margin-left: 15rem;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.card h5,
+h4 {
+    margin: 10px;
+
+}
+
+.card {
+    width: 20%;
+    margin: 5rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.16), 0 4px 7px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+
+.card:hover .playIcon{
+    opacity: 1;
+    margin-left: 13rem;
+}
+
+.card:hover .playIcon2{
+    opacity: 1;
+    margin-left: 13rem;
+}
+.card .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.card input {
+    /* margin: 0 0 0 10px; */
+    width: 80%;
+}
+
+.songCard {
+    margin: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#img {
+    width: 80%;
+    height: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.bigCard {
+    /* background: #000; */
+    padding: 20px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.SiCard {
+    background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.67)), url(../images/ccard2.jpg);
+    height: 55vh;
+    background-size: cover;
+    width: 70%;
+    margin: 50px 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.text {
+    margin: 10px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.text p,
+h2,
+span {
+    margin: 10px;
+}
+
+.contain {
+    margin: 15px;
+    border: 1px solid white;
+    height: 5vh;
+    width: 10vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain:hover {
+    background-color: #2e492a;
+    transition: 1.5s;
+}
+
+.centeritn a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.box {
+    margin: 10px;
+
+    border: 1px solid white;
+    height: 6vh;
+    width: 12vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+#progressbar {
+    margin: 5px 0 0 15px;
+    width: 12rem;
+}
+
+.full {
+    background-image: url(../images/newsletter-img.jpg);
+    height: 40vh;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+
+.singup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.singup input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 14px 0 12px 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.singup button {
+    padding: 9px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* border-radius: 8px; */
+    background-color: rgb(73, 73, 255);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+footer {
+    padding: 4rem 7rem;
+    background: #eeedf2;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .foot2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer .foot2 .info h2 {
+    margin: 10px 0;
+}
+
+footer .foot2 .follow .icon {
+    font-size: 1.5rem;
+}
+
+footer .foot2 .follow .icon i {
+    color: #000;
+}
+
+footer .foot2 .follow .icon i:hover {
+    color: #2e492a;
+}
+
+footer .foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .foot h4 {
+    font-size: 1.2rem;
+}
+
+footer .foot a {
+    font-size: 1.2rem;
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+footer .foot a:hover {
+    color: #2e492a;
+}
+
+.copyright {
+    padding: 20px 0;
+    text-align: center;
+    background: #4820e8;
+    color: #fff;
+}
+
+/* -----------------breakpoint 1------------------------------ */
+@media screen and (max-width:820px) {
+    .songCard {
+        /* margin: 0 24px; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card h5,
+    h4 {
+        font-size: 22px;
+    }
+
+    .SiCard {
+        background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.67)), url(../images/ccard2.jpg);
+        height: 45vh;
+        background-size: cover;
+        width: 90%;
+        margin: 50px 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .box {
+        width: 15vw;
+    }
+
+    footer {
+        padding: 4rem 5rem;
+        /* flex-direction: column; */
+    }
+}
+
+/* -----------------------------breakpoint2-------------------- */
+
+@media screen and (max-width:420px) {
+
+    h2,h4{
+        font-size: 24px;
+    }
+
+    .header .nav .menu{
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 0;
+        position: fixed;
+        right: -320px;
+        height: 90vh;
+        width: 320px;
+        background-color: #fff;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 0;
+        transition: all 0.3s;
+        margin-top:8vh;
+    }
+
+    .header .nav .active{
+        right: 0;
+        /* background-color: red; */
+    }
+
+    .header .nav .menu .cross{
+        display: initial;
+    }
+    .header .nav .active .fa-x{
+        font-size: 1.5rem;
+        position: relative;
+        top: -40px;
+        margin: 0 0 0 30px;
+    }
+
+    .scrolled .bar{
+        color: #000;
+    }
+
+    .header .nav li{
+        margin-bottom: 20px;
+    }
+
+    .header .nav a{
+        color: #000;
+    }
+
+    .bar {
+        display: initial;
+        color: #fff;
+    }
+
+    .bar i {
+        margin-right: 15px;
+        font-size: 1.5rem;
+    }
+
+    .centeritn {
+        width: 80%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .bigCard {
+        padding: 0;
+        margin: 0;
+    }
+    .SiCard {
+        height: 35vh;
+        width: 100%;
+        padding: 0;
+        margin:30px 0;
+    }
+
+    .box{
+        width: 26vw;
+        height: 4vh;
+    }
+
+    .box a span{
+        font-size: 12px;
+    }
+
+    footer{
+        padding: 2rem 2rem;
+    }
+
+    footer .foot{
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+}
