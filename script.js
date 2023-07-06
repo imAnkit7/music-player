@@ -32,26 +32,26 @@ window.addEventListener('scroll', changeBg)
 const songsInfo = [
     {
         id: '1',
-        img: '../images/ramji.png',
-        song: '../music/Kaushalya_Dashrath.mp3',
+        img: 'images/ramji.png',
+        song: 'music/Kaushalya_Dashrath.mp3',
         name: 'Kaushalya_Dashrath.mp3'
     },
     {
         id: '2',
-        img: '../images/Luv.jpg',
-        song: '../music/LUV_LETTER_.mp3',
+        img: 'images/Luv.jpg',
+        song: 'music/LUV_LETTER_.mp3',
         name: 'LUV_LETTER_.mp3'
     },
     {
         id: '3',
-        img: '../images/fighter.jpg',
-        song: '../music/Lover_Also_.mp3',
+        img: 'images/fighter.jpg',
+        song: 'music/Lover_Also_.mp3',
         name: 'Lover_Also_.mp3'
     },
     {
         id: '4',
-        img: '../images/thug.jpg',
-        song: '../music/Thug_Le.mp3',
+        img: 'images/thug.jpg',
+        song: 'music/Thug_Le.mp3',
         name: 'Thug_Le.mp3'
     },
 ]
@@ -59,26 +59,26 @@ const songsInfo = [
 const nextdata = [
     {
         id: '1',
-        img: '../images/thug.jpg',
-        song: '../music/Thug_Le.mp3',
+        img: 'images/thug.jpg',
+        song: 'music/Thug_Le.mp3',
         name: 'Thug_Le.mp3'
     },
     {
         id: '2',
-        img: '../images/besabriyaan.jpg',
-        song: '../music/BESABRIYAAN.mp3',
+        img: 'images/besabriyaan.jpg',
+        song: 'music/BESABRIYAAN.mp3',
         name: 'BESABRIYAAN.mp3'
     },
     {
         id: '3',
-        img: '../images/jadu.jpg',
-        song: '../music/Kaala_Jaadu.mp3',
+        img: 'images/jadu.jpg',
+        song: 'music/Kaala_Jaadu.mp3',
         name: 'Kaala_Jaadu.mp3'
     },
     {
         id: '4',
-        img: '../images/adat.jpg',
-        song: '../music/Aadat_Se.mp3',
+        img: 'images/adat.jpg',
+        song: 'music/Aadat_Se.mp3',
         name: 'Aadat_Se.mp3'
     }
 ]
@@ -116,9 +116,6 @@ container2.innerHTML = showCard2
 
 // ------------------------------------------------
 const cards = document.getElementsByClassName('card')
-function alertFunc() {
-    alert("double click on the song to pause");
-  }
 
 //   setTimeout(alertFunc,2000)
 // const 
